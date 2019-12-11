@@ -10,11 +10,11 @@ the National Aeronautics and Space Administration. No copyright is claimed in th
 United States under Title 17, U.S. Code. All Other Rights Reserved.
 
 ### Contact Information
-Thomas Grubb
-NASA Goddard Space Flight Center
-Code 587
-Greenbelt, MD 20771
-Thomas.G.Grubb@nasa.gov
+    Thomas Grubb
+    NASA Goddard Space Flight Center
+    Code 587
+    Greenbelt, MD 20771
+    Thomas.G.Grubb@nasa.gov
 
 ### License Information
 
