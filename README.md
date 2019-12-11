@@ -18,6 +18,6 @@ United States under Title 17, U.S. Code. All Other Rights Reserved.
 
 ### License Information
 
-This software is licensed under [NASAs Open Source Agreement] (LICENSE).
+This software is licensed under [NASAs Open Source Agreement](LICENSE).
 
 ![Sample VR Screenshot](data/images/Screenshot%202017-12-12%2016.21.59.png "Sample VR Screenshot")
