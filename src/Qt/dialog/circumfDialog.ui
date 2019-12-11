@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>479</width>
+    <height>228</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QFrame {
+	background-color: #25292B;
+}
+
+#centralWidget, QStackedWidget, QStackedWidget &gt; QWidget {
+	background: transparent;
+}
+
+QLabel {
+	color: #F8F8F8;
+	background: transparent;
+}
+
+QFrame[titleFrame=true] {
+	background-color: #5F5F5F;
+}
+
+QWidget[fontSize=&quot;14&quot;] {
+	font-size: 14pt;
+}
+
+QWidget[fontSize=&quot;12&quot;] {
+	font-size: 12pt;
+}
+
+QGroupBox {
+	color: #F8F8F8;
+	border: none;
+	margin: 15px;
+}
+
+QWidget[inList=true] {
+	font-size: 12pt;
+	min-height: 60px;
+	max-height: 100px;
+}
+
+
+/* PushButton */
+
+QPushButton {
+	background-color: #25292B;
+	border: 2px solid #F8F8F8;
+	color: #F8F8F8;
+}
+
+QPushButton:hover {
+	background-color: #F8F8F8;
+	color: #25292B;
+}
+
+QPushButton:pressed {
+	background-color: #00F0F0;
+	color: #25292B;
+	border: 2px solid #00F0F0;
+}
+
+
+/* RadioButton */
+
+QRadioButton {
+	background-color: #25292B;
+	border: 2px solid #F8F8F8;
+	color: #F8F8F8;
+}
+
+QRadioButton:hover {
+	background-color: #F8F8F8;
+	color: #25292B;
+}
+
+QRadioButton:checked {
+	background-color: #00F0F0;
+	color: #25292B;
+	border: 2px solid #00F0F0;
+}
+
+QRadioButton::indicator {
+	width: 0px;
+	height: 0px;
+	color: #F8F8F8;
+}
+
+
+/* CheckBox */
+
+QCheckBox {
+	background-color: #25292B;
+	border: 2px solid #F8F8F8;
+	color: #F8F8F8;
+}
+
+QCheckBox:hover {
+	background-color: #F8F8F8;
+	color: #25292B;
+}
+
+QCheckBox:checked {
+	background-color: #00F0F0;
+	color: #25292B;
+	border: 2px solid #00F0F0;
+}
+
+QCheckBox::indicator {
+	width: 0px;
+	height: 0px;
+}
+
+
+/* Page Selectors */
+
+QRadioButton[pageSelector=true] {
+	background-color: #25292B;
+	max-width: 90px;
+	max-height: 90px;
+	border-radius: 40px;
+	border: none;
+	padding: 10px;
+}
+
+QRadioButton[pageSelector=true]:checked {
+	background-color: #F8F8F8;
+	max-width: 90px;
+	max-height: 90px;
+	border-radius: 40px;
+	border: none;
+	padding: 10px;
+}
+
+#viewRadioButton {
+	image: url(:/menu/icons/view-white.svg);
+}
+
+#viewRadioButton:checked {
+	image: url(:/menu/icons/view-black.svg);
+}
+
+#toolsRadioButton {
+	image: url(:/menu/icons/tools-white.svg);
+}
+
+#toolsRadioButton:checked {
+	image: url(:/menu/icons/tools-black.svg);
+}
+
+#groupsRadioButton {
+	image: url(:/menu/icons/groups-white.svg);
+}
+
+#groupsRadioButton:checked {
+	image: url(:/menu/icons/groups-black.svg);
+}
+
+#pauseRadioButton {
+	image: url(:/menus/icons/pause-white.svg);
+}
+
+#pauseRadioButton:checked {
+	image: url(:/menus/icons/pause-black.svg);
+}
+
+#playRadioButton {
+	image: url(:/menus/icons/play-white.svg);
+}
+
+#playRadioButton:checked {
+	image: url(:/menus/icons/play-black.svg);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>401</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QFrame" name="frame_3">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>351</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Avg. Circumference:    </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="circumferenceLabel">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>0</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="dismissCircumferenceButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Dismiss</string>
+       </property>
+       <property name="fontSize" stdset="0">
+        <UInt>12</UInt>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actionLoad">
+   <property name="text">
+    <string>Load</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionPref_s">
+   <property name="text">
+    <string>Pref's</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionDraw">
+   <property name="text">
+    <string>Draw</string>
+   </property>
+  </action>
+  <action name="actionMeasure">
+   <property name="text">
+    <string>Measure</string>
+   </property>
+  </action>
+  <action name="actionWaypoint">
+   <property name="text">
+    <string>Waypoint</string>
+   </property>
+  </action>
+  <action name="actionNote">
+   <property name="text">
+    <string>Note</string>
+   </property>
+  </action>
+  <action name="actionSphere">
+   <property name="text">
+    <string>Sphere</string>
+   </property>
+  </action>
+  <action name="actionBox">
+   <property name="text">
+    <string>Box</string>
+   </property>
+  </action>
+  <action name="actionSaveSourceIDs">
+   <property name="text">
+    <string>Save Source_ID's</string>
+   </property>
+  </action>
+  <action name="actionReset">
+   <property name="text">
+    <string>Reset</string>
+   </property>
+  </action>
+  <action name="actionPlace1">
+   <property name="text">
+    <string>Place1</string>
+   </property>
+  </action>
+  <action name="actionPlace2">
+   <property name="text">
+    <string>Place2</string>
+   </property>
+  </action>
+  <action name="actionPlace3">
+   <property name="text">
+    <string>Place3</string>
+   </property>
+  </action>
+  <action name="actionPlace4">
+   <property name="text">
+    <string>Place4</string>
+   </property>
+  </action>
+  <action name="actionShow_All">
+   <property name="text">
+    <string>Show All</string>
+   </property>
+  </action>
+  <action name="actionHide_All">
+   <property name="text">
+    <string>Hide All</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../../resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

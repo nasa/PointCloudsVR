@@ -1,0 +1,27 @@
+<RCC>
+  <qresource prefix="/forms">
+    <file>mainwindow.ui</file>
+	  <file>mars_mainwindow.ui</file>
+  </qresource>
+
+  <qresource>
+    <file>Qt/menu/gaia.ui</file>
+    <file>Qt/menu/default.ui</file>
+    <file>Qt/menu/mars.ui</file>
+	<file>Qt/menu/flow.ui</file>
+	<file>Qt/dialog/circumfDialog.ui</file>
+  </qresource>
+
+  <qresource>
+    <file>Qt/menu/icons/view-white.svg</file>
+    <file>Qt/menu/icons/view-black.svg</file>
+    <file>Qt/menu/icons/tools-white.svg</file>
+    <file>Qt/menu/icons/tools-black.svg</file>
+    <file>Qt/menu/icons/groups-white.svg</file>
+    <file>Qt/menu/icons/groups-black.svg</file>
+    <file>Qt/menu/icons/pause-white.svg</file>
+    <file>Qt/menu/icons/pause-black.svg</file>
+    <file>Qt/menu/icons/play-white.svg</file>
+    <file>Qt/menu/icons/play-black.svg</file>
+  </qresource>
+</RCC>

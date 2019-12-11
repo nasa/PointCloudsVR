@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>494</width>
+    <height>192</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QCheckBox" name="colorByClassificationCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>301</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Color by Classification</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>494</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSystem">
+    <property name="title">
+     <string>System</string>
+    </property>
+    <addaction name="actionLoad"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionPref_s"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionDraw"/>
+    <addaction name="actionMeasure"/>
+    <addaction name="actionWaypoint"/>
+    <addaction name="actionNote"/>
+    <addaction name="actionDisk"/>
+    <addaction name="actionResetTools"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionOriginal"/>
+    <addaction name="actionIntensity"/>
+    <addaction name="actionHeight"/>
+    <addaction name="actionReset"/>
+   </widget>
+   <widget class="QMenu" name="menuPlaces">
+    <property name="title">
+     <string>Places</string>
+    </property>
+    <addaction name="actionPlace1"/>
+    <addaction name="actionPlace2"/>
+    <addaction name="actionPlace3"/>
+    <addaction name="actionPlace4"/>
+   </widget>
+   <addaction name="menuSystem"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuView"/>
+   <addaction name="menuPlaces"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionLoad">
+   <property name="text">
+    <string>Load</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionPref_s">
+   <property name="text">
+    <string>Pref's</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionDraw">
+   <property name="text">
+    <string>Draw</string>
+   </property>
+  </action>
+  <action name="actionMeasure">
+   <property name="text">
+    <string>Measure</string>
+   </property>
+  </action>
+  <action name="actionWaypoint">
+   <property name="text">
+    <string>Waypoint</string>
+   </property>
+  </action>
+  <action name="actionNote">
+   <property name="text">
+    <string>Note</string>
+   </property>
+  </action>
+  <action name="actionOriginal">
+   <property name="text">
+    <string>Original</string>
+   </property>
+  </action>
+  <action name="actionIntensity">
+   <property name="text">
+    <string>Intensity</string>
+   </property>
+  </action>
+  <action name="actionHeight">
+   <property name="text">
+    <string>Height</string>
+   </property>
+  </action>
+  <action name="actionReset">
+   <property name="text">
+    <string>Reset</string>
+   </property>
+  </action>
+  <action name="actionPlace1">
+   <property name="text">
+    <string>Place1</string>
+   </property>
+  </action>
+  <action name="actionPlace2">
+   <property name="text">
+    <string>Place2</string>
+   </property>
+  </action>
+  <action name="actionPlace3">
+   <property name="text">
+    <string>Place3</string>
+   </property>
+  </action>
+  <action name="actionPlace4">
+   <property name="text">
+    <string>Place4</string>
+   </property>
+  </action>
+  <action name="actionDisk">
+   <property name="text">
+    <string>Disk</string>
+   </property>
+  </action>
+  <action name="actionResetTools">
+   <property name="text">
+    <string>Reset</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

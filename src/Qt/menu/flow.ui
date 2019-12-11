@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>806</width>
+    <height>592</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QFrame {
+	background-color: #25292B;
+}
+
+#centralWidget, QStackedWidget, QStackedWidget &gt; QWidget {
+	background: transparent;
+}
+
+QLabel {
+	color: #F8F8F8;
+	background: transparent;
+}
+
+QFrame[titleFrame=true] {
+	background-color: #5F5F5F;
+}
+
+QWidget[fontSize=&quot;14&quot;] {
+	font-size: 14pt;
+}
+
+QWidget[fontSize=&quot;12&quot;] {
+	font-size: 12pt;
+}
+
+QGroupBox {
+	color: #F8F8F8;
+	border: none;
+	margin: 15px;
+}
+
+QWidget[inList=true] {
+	font-size: 12pt;
+	min-height: 60px;
+	max-height: 100px;
+}
+
+
+/* PushButton */
+
+QPushButton {
+	background-color: #25292B;
+	border: 2px solid #F8F8F8;
+	color: #F8F8F8;
+}
+
+QPushButton:hover {
+	background-color: #F8F8F8;
+	color: #25292B;
+}
+
+QPushButton:pressed {
+	background-color: #00F0F0;
+	color: #25292B;
+	border: 2px solid #00F0F0;
+}
+
+
+/* RadioButton */
+
+QRadioButton {
+	background-color: #25292B;
+	border: 2px solid #F8F8F8;
+	color: #F8F8F8;
+}
+
+QRadioButton:hover {
+	background-color: #F8F8F8;
+	color: #25292B;
+}
+
+QRadioButton:checked {
+	background-color: #00F0F0;
+	color: #25292B;
+	border: 2px solid #00F0F0;
+}
+
+QRadioButton::indicator {
+	width: 0px;
+	height: 0px;
+	color: #F8F8F8;
+}
+
+
+/* CheckBox */
+
+QCheckBox {
+	background-color: #25292B;
+	border: 2px solid #F8F8F8;
+	color: #F8F8F8;
+}
+
+QCheckBox:hover {
+	background-color: #F8F8F8;
+	color: #25292B;
+}
+
+QCheckBox:checked {
+	background-color: #00F0F0;
+	color: #25292B;
+	border: 2px solid #00F0F0;
+}
+
+QCheckBox::indicator {
+	width: 0px;
+	height: 0px;
+}
+
+
+/* Page Selectors */
+
+QRadioButton[pageSelector=true] {
+	background-color: #25292B;
+	max-width: 90px;
+	max-height: 90px;
+	border-radius: 40px;
+	border: none;
+	padding: 10px;
+}
+
+QRadioButton[pageSelector=true]:checked {
+	background-color: #F8F8F8;
+	max-width: 90px;
+	max-height: 90px;
+	border-radius: 40px;
+	border: none;
+	padding: 10px;
+}
+
+#viewRadioButton {
+	image: url(:Qt/menu/icons/view-white.svg);
+}
+
+#viewRadioButton:checked {
+	image: url(:Qt/menu/icons/view-black.svg);
+}
+
+#toolsRadioButton {
+	image: url(:Qt/menu/icons/tools-white.svg);
+}
+
+#toolsRadioButton:checked {
+	image: url(:Qt/menu/icons/tools-black.svg);
+}
+
+#groupsRadioButton {
+	image: url(:Qt/menu/icons/groups-white.svg);
+}
+
+#groupsRadioButton:checked {
+	image: url(:Qt/menu/icons/groups-black.svg);
+}
+
+#pauseRadioButton {
+	image: url(:Qt/menu/icons/pause-white.svg);
+}
+
+#pauseRadioButton:checked {
+	image: url(:Qt/menu/icons/pause-black.svg);
+}
+
+#playRadioButton {
+	image: url(:Qt/menu/icons/play-white.svg);
+}
+
+#playRadioButton:checked {
+	image: url(:Qt/menu/icons/play-black.svg);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>1</y>
+      <width>751</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="1,2">
+     <property name="spacing">
+      <number>9</number>
+     </property>
+     <item>
+      <widget class="QFrame" name="frame">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>4</x>
+          <y>-1</y>
+          <width>741</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Tools&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>9</number>
+       </property>
+       <item>
+        <widget class="QRadioButton" name="drawButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>&amp;Draw</string>
+         </property>
+         <property name="fontSize" stdset="0">
+          <UInt>12</UInt>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="measureButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Meas&amp;ure</string>
+         </property>
+         <property name="fontSize" stdset="0">
+          <UInt>12</UInt>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="diskButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Selection Disk</string>
+         </property>
+         <property name="fontSize" stdset="0">
+          <UInt>12</UInt>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="resetColorsButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Reset Colors</string>
+         </property>
+         <property name="fontSize" stdset="0">
+          <UInt>12</UInt>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>260</y>
+      <width>731</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_6">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#aa00ff;&quot;&gt;Color Channels&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#aa55ff;&quot;&gt;Scale for Density Values&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QLabel" name="label_7">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Red&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_8">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#55ff7f;&quot;&gt;Green&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_9">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#5555ff;&quot;&gt;Blue&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QComboBox" name="red_channel">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="currentText">
+            <string notr="true">Dinoflagellates</string>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <item>
+            <property name="text">
+             <string>Dinoflagellates</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Diatoms</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Coccolithophores</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Prokaryotes</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="green_channel">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <item>
+            <property name="text">
+             <string>Dinoflagellates</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Diatoms</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Coccolithophores</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Prokaryotes</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="blue_channel">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <item>
+            <property name="text">
+             <string>Dinoflagellates</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Diatoms</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Coccolithophores</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Prokaryotes</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="QSlider" name="redScaleSlider">
+           <property name="minimum">
+            <number>10</number>
+           </property>
+           <property name="maximum">
+            <number>50</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="tickPosition">
+            <enum>QSlider::TicksBelow</enum>
+           </property>
+           <property name="tickInterval">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSlider" name="greenScaleSlider">
+           <property name="minimum">
+            <number>10</number>
+           </property>
+           <property name="maximum">
+            <number>50</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="tickPosition">
+            <enum>QSlider::TicksBelow</enum>
+           </property>
+           <property name="tickInterval">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSlider" name="blueScaleSlider">
+           <property name="minimum">
+            <number>10</number>
+           </property>
+           <property name="maximum">
+            <number>50</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="tickPosition">
+            <enum>QSlider::TicksBelow</enum>
+           </property>
+           <property name="tickInterval">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLabel" name="redScaleText">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;1.0&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="greenScaleText">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;1.0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="blueScaleText">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;1.0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>460</y>
+      <width>461</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_7">
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actionLoad">
+   <property name="text">
+    <string>Load</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionPref_s">
+   <property name="text">
+    <string>Pref's</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionDraw">
+   <property name="text">
+    <string>Draw</string>
+   </property>
+  </action>
+  <action name="actionMeasure">
+   <property name="text">
+    <string>Measure</string>
+   </property>
+  </action>
+  <action name="actionWaypoint">
+   <property name="text">
+    <string>Waypoint</string>
+   </property>
+  </action>
+  <action name="actionNote">
+   <property name="text">
+    <string>Note</string>
+   </property>
+  </action>
+  <action name="actionSphere">
+   <property name="text">
+    <string>Sphere</string>
+   </property>
+  </action>
+  <action name="actionBox">
+   <property name="text">
+    <string>Box</string>
+   </property>
+  </action>
+  <action name="actionSaveSourceIDs">
+   <property name="text">
+    <string>Save Source_ID's</string>
+   </property>
+  </action>
+  <action name="actionReset">
+   <property name="text">
+    <string>Reset</string>
+   </property>
+  </action>
+  <action name="actionPlace1">
+   <property name="text">
+    <string>Place1</string>
+   </property>
+  </action>
+  <action name="actionPlace2">
+   <property name="text">
+    <string>Place2</string>
+   </property>
+  </action>
+  <action name="actionPlace3">
+   <property name="text">
+    <string>Place3</string>
+   </property>
+  </action>
+  <action name="actionPlace4">
+   <property name="text">
+    <string>Place4</string>
+   </property>
+  </action>
+  <action name="actionShow_All">
+   <property name="text">
+    <string>Show All</string>
+   </property>
+  </action>
+  <action name="actionHide_All">
+   <property name="text">
+    <string>Hide All</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../../resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
