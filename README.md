@@ -21,4 +21,6 @@ United States under Title 17, U.S. Code. All Other Rights Reserved.
 
 This software is licensed under the [NASA Open Source Agreement](LICENSE.txt).
 
+### Example of PointCloudsVR showing an .las Lidar file in VR:
+
 ![Sample VR Screenshot](data/images/Screenshot%202017-12-12%2016.21.59.png "Sample VR Screenshot")
