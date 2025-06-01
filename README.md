@@ -1,6 +1,25 @@
 # PointCloudsVR
 PointCloudsVR is a C++ Windows 10 desktop application that displays Point Clouds in Virtual Reality (VR) using [OpenVR](https://github.com/ValveSoftware/openvr) and [SteamVR](https://store.steampowered.com/steamvr).  It is built upon a number of open source libraries: [OpenSceneGraph](http://www.openscenegraph.org/), [OpenFrames](https://github.com/ravidavi/OpenFrames), [liblas](https://liblas.org/), and several others, as described in the [PointCloudsVR User Manual](doc/PointCloudsVR_User_Manual.pdf).  It can display several Point Cloud file formats out of the box: .las, .ply, and others supported by OpenSceneGraph, as well as custom formats, as defined in the C++ code for this project.  It has various 3D analysis tools, such as the ability to draw 3D lines in space.  It can be used for science data analysis that uses Point Clouds for its data format.  PointCloudsVR has been used to display and analyze: Lidar of trees, Lidar of snow, Gaia (an ESA spacecraft) star data, and the solar wind flowing around Mars, all in Virtual Reality.  The user may navigate 3D space using one's VR headset and controllers. PointCloudsVR has been tested with both the HTC Vive / Vive Pro, and Oculus Rift.
 
+## Quick Start
+
+```bash
+git clone https://github.com/nasa/PointCloudsVR.git
+cd PointCloudsVR
+mkdir build && cd build
+cmake ..
+make
+```
+
+Note: Requires Windows, CMake, and SteamVR installed
+
+Then:
+```bash
+git add README.md
+git commit -m "Add Quick Start section to README.md"
+git push origin improve-readme
+```
+
 ### Build and Run Instructions
 See [PointCloudsVR User Manual](doc/PointCloudsVR_User_Manual.pdf).  The manual also shows 2 screenshots of different applications (Gaia star data, and an .las file showing a tree) toward the end of the document.
 
